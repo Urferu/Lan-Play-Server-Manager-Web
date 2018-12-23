@@ -1,0 +1,50 @@
+{
+  "name": "lanplayservermanager",
+  "description": "server",
+  "version": "1.0.0",
+  "author": "Urferu",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  },
+  "generator": {
+    "name": "webframework",
+    "version": "0.1.9"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "gulp test"
+  },
+  "dependencies": {
+    "bower": "^1.8.4"
+  },
+  "devDependencies": {
+    "clear": "0.0.1",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-dom": "^0.9.0",
+    "gulp-file-assets": "^2.2.2",
+    "gulp-foreach": "^0.1.0",
+    "gulp-htmlhint": "^0.3.1",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-uglify": "^1.5.4",
+    "gulp-uglifycss": "^1.0.6",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.8",
+    "htmlhint-stylish": "^1.0.3",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "main-bower-files": "^2.13.1",
+    "run-sequence": "^1.2.2",
+    "st": "^1.2.0"
+  }
+}

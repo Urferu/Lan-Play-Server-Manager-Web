@@ -1,0 +1,17 @@
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\Release\ServerManagerService.exe.config
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\Release\ServerManagerService.exe
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\Release\ServerManagerService.pdb
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\obj\Debug\ServerManagerService.Properties.Resources.resources
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\obj\Debug\ServerManagerService.csproj.GenerateResource.Cache
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\obj\Debug\ServerManagerService.csproj.CoreCompileInputs.cache
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\obj\Debug\ServerManagerService.exe
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\obj\Debug\ServerManagerService.pdb
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\obj\Debug\ServerManagerService.csprojResolveAssemblyReference.cache
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\Release\ServerManagerService.exe.config
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\Release\ServerManagerService.exe
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\Release\ServerManagerService.pdb
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\obj\Debug\ServerManagerService.Properties.Resources.resources
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\obj\Debug\ServerManagerService.csproj.GenerateResource.Cache
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\obj\Debug\ServerManagerService.exe
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\obj\Debug\ServerManagerService.pdb
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Service\ServerManagerService\obj\Debug\ServerManagerService.csprojResolveAssemblyReference.cache

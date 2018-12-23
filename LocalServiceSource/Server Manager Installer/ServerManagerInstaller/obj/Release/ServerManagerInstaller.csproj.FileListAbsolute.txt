@@ -1,0 +1,17 @@
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\Release\ServerManagerInstaller.exe.config
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\Release\ServerManagerInstaller.exe
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\Release\ServerManagerInstaller.pdb
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\obj\Release\ServerManagerInstaller.csprojResolveAssemblyReference.cache
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\obj\Release\ServerManagerInstaller.Properties.Resources.resources
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\obj\Release\ServerManagerInstaller.csproj.GenerateResource.Cache
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\obj\Release\ServerManagerInstaller.csproj.CoreCompileInputs.cache
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\obj\Release\ServerManagerInstaller.exe
+\\10.28.117.165\93050968\Switch\Herramientas\Proyectos\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\obj\Release\ServerManagerInstaller.pdb
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\Release\ServerManagerInstaller.exe.config
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\obj\Release\ServerManagerInstaller.exe
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\obj\Release\ServerManagerInstaller.pdb
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\Release\ServerManagerInstaller.exe
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\Release\ServerManagerInstaller.pdb
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\obj\Release\ServerManagerInstaller.csprojResolveAssemblyReference.cache
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\obj\Release\ServerManagerInstaller.Properties.Resources.resources
+G:\Projectos generales\Lan-Play-Server-Manager-Web\LocalServiceSource\Server Manager Installer\ServerManagerInstaller\obj\Release\ServerManagerInstaller.csproj.GenerateResource.Cache

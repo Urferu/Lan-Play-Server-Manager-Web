@@ -1,0 +1,7 @@
+{
+	"lanPlayVersion": "v0.0.7",
+	"pmtu": "1500",
+	"selectedInterfaz": true,
+	"fakeInternet": true,
+	"showConsole": false
+}

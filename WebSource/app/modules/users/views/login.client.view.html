@@ -1,0 +1,51 @@
+<div class="page-content">
+<div class="row" data-ng-controller="AuthenticationController">
+      <div class="col-md-10 col-md-offset-1">
+            <div class="login-layout" >
+            <div class="main-container"  >
+                <div class="main-content"   >
+                    <div class="login-container position-relative vertical-height "  >
+                        <div id="login-box" class="login-box visible widget-box no-border vertical-center"  >
+                            <div class=""  >
+                                <div class="widget-main text-center" >
+                                    <center><h4 class="header blue lighter bigger">
+                                        <!-- <i class="moon-vendor2 bigger-130"></i> -->
+                                        Favor de Identificarse
+                                    </h4></center>
+                                    <div class="space-6"></div>
+                                    <form class="form-horizontal" id="validation-form" method="get">
+                                        <div class="form-group">
+                                            <label class="block clearfix">
+                                            <span class="block input-icon input-icon-right">
+                                            <i class="icon-user" style="margin:8px;"></i>
+                                                <input autofocus focus-on="logmein" required type="text" minlength="8" maxlength="9" id="txt_emp" name="txt_emp" class="form-control input-lg center-text" ui-mask="{{99999999}}"  ng-model="user.numeroEmpleado"/>
+                                            </span>
+                                            </label>
+                                        </div>
+
+                                        <div class="space"></div>
+                                        <div class="form-group clearfix" align="center">
+
+                                            <button id="btn_action" ng-click="login()" value="Iniciar Sesion" type="button" class="width-35  btn btn-sm btn-white" style="border-radius:5px;">
+                                                <i class="moon-finger bigger-150 "></i>
+                                                Ingresar
+                                            </button>
+                                        </div>
+
+                                        <div class="space-4"></div>
+                                        <div class="col-xs-12">
+                                            <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <div id="hna"></div>
+                            </div><!--/widget-body-->
+                        </div><!--/login-box-->
+                    </div>  <!-- position-relative -->
+                </div>
+            </div><!--/.main-container-->
+        </div>
+      </div>
+    </div>
+</div>

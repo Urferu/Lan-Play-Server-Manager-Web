@@ -1,0 +1,116 @@
+[
+    {
+        "num": 1,
+        "ipDns": "35.236.10.223",
+        "ubicacion": "US-West CA",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    },
+    {
+        "num": 2,
+        "ipDns": "nycnsw.duckdns.org",
+        "ubicacion": "US-NYC",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    },
+    {
+        "num": 3,
+        "ipDns": "nxlan.duckdns.org",
+        "ubicacion": "US-Northwest WA",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    }
+    ,
+    {
+        "num": 4,
+        "ipDns": "pcoh.ddns.net",
+        "ubicacion": "US-TN",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    }
+    ,
+    {
+        "num": 5,
+        "ipDns": "fr.fadx.co.uk",
+        "ubicacion": "EU-(France)",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    }
+    ,
+    {
+        "num": 6,
+        "ipDns": "switch.glaciergaming.co.uk",
+        "ubicacion": "EU-(UK)",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    }
+    ,
+    {
+        "num": 7,
+        "ipDns": "switch.homelab.tech",
+        "ubicacion": "EU-(UK)",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    }
+    ,
+    {
+        "num": 8,
+        "ipDns": "memehouse.de",
+        "ubicacion": "EU-(Germany)",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    }
+    ,
+    {
+        "num": 9,
+        "ipDns": "relay.it-cybergate.club",
+        "ubicacion": "EU-(Germany)",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    }
+    ,
+    {
+        "num": 10,
+        "ipDns": "177.54.110.45",
+        "ubicacion": "Brazil",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    }
+    ,
+    {
+        "num": 11,
+        "ipDns": "slp.rush-hour.wo.tc",
+        "ubicacion": "KR-Korea",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    }
+    ,
+    {
+        "num": 12,
+        "ipDns": "lithium2g.ddns.net",
+        "ubicacion": "Australia",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    }
+    ,
+    {
+        "num": 13,
+        "ipDns": "switch.goffy.tk",
+        "ubicacion": "EU-(Norway)",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    }
+]

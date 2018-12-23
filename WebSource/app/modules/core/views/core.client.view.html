@@ -1,0 +1,108 @@
+  <header>
+    <div id="navbar" class="navbar navbar-default" data-ng-controller="HeaderController as vmHeader" ng-hide="isLoginScreen">
+      <div class="navbar-container" id="navbar-container">
+        <!-- #section:basics/sidebar.mobile.toggle -->
+        <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+          <span class="sr-only">Toggle sidebar</span>
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- /section:basics/sidebar.mobile.toggle -->
+        <div class="navbar-header pull-left">
+          <!-- #section:basics/navbar.layout.brand -->
+          <a href="" class="navbar-brand">
+            <small>
+              <i class="fa fa-sitemap"></i>
+              Lan Play Server Manager
+            </small>
+          </a>
+        </div>
+
+        <!-- #section:basics/navbar.dropdown -->
+        <!-- <div class="navbar-buttons navbar-header pull-right" role="navigation">
+          <ul class="nav ace-nav">
+            
+            <li class="light-blue dropdown">
+              <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                <img class="nav-user-photo" ng-src="{{vmHeader.hojaAzul}}{{vmHeader.usuario.numeroempleado}}.jpg" alt="user's Photo" />
+                <span class="user-info">
+                  <small>Bienvenido,</small>
+                  {{vmHeader.usuario.nombre}}
+                </span>
+
+                <i class="ace-icon fa fa-caret-down"></i>
+              </a>
+
+              <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+
+                <li>
+                  <a href="" ng-click="logout()">
+                    <i class="ace-icon fa fa-power-off"></i>
+                    Salir
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div> -->
+
+        <!-- /section:basics/navbar.dropdown -->
+      </div><!-- /.navbar-container -->
+    </div>
+  </header>
+
+  <div class="content main-container">
+    <!-- <div id="sidebar" class="sidebar responsive" ng-class="{true: 'menu-min', false: ''}[!collapseMenu]" data-ng-controller="MenuController" ng-hide="isLoginScreen">
+      <script type="text/ng-template" id="submenu">
+        <a ng-click="expand(data)"  ui-sref="{{data.state}}">
+          <i class="menu-icon fa fa-caret-right"></i>
+          {{data.name}}
+        </a>
+      </script>
+      <script type="text/ng-template"  id="my-tmpl">
+          <a ng-if="data.nodes.length==0" ng-click="expand(data)" ui-sref="{{data.state}}" ng-class="{true:'dropdown-toggle' , false:''} [data.nodes.length >0]" ui:keyboard-navigatable navigate-on="{up: selectPreviousItem, down: selectNextItem, submit: close, escape: close}">
+            
+            <i class="menu-icon fa bigger-150" ng-class="{false:data.icon, true:'icon-double-angle-right' } [!data.padre]" ></i>
+            <span ng-class="{true:'menu-text', false:'' } [data.padre]"> {{data.name}} </span>
+            <b class="arrow fa fa-angle-down" ng-show="data.nodes.length >0"></b>
+          </a>
+
+          <a ng-if="data.nodes.length>0" ng-click="expand(data)" ng-class="{true:'dropdown-toggle' , false:''} [data.nodes.length >0]" ui:keyboard-navigatable navigate-on="{up: selectPreviousItem, down: selectNextItem, submit: close, escape: close}">
+            
+            <i class="menu-icon fa bigger-150" ng-class="{false:data.icon, true:'icon-double-angle-right' } [!data.padre]" ></i>
+            <span ng-class="{true:'menu-text', false:'' } [data.padre]"> {{data.name}} </span>
+            <b class="arrow fa fa-angle-down" ng-show="data.nodes.length >0"></b>
+          </a>
+         
+          <ul class="submenu" ng-if="data.nodes"  ng-style="{display: data.show == true ? 'block' : 'none' }" >
+              <li   ng-class="{'active':data.active}" ng-repeat="data in data.nodes" ng-include="'submenu'"></li>
+            
+          </ul>
+      </script>
+      
+      <ul class="nav nav-list" >
+        
+          <li ui-sref-active="active" ng-class="{'open':data.show}" ng-repeat="data in tree" ng-include="'my-tmpl'"></li>
+      </ul>
+
+      <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse" ng-click="toggleMenu()" >
+        
+        <i class="ace-icon fa" ng-class="{true:'fa-angle-double-right',false: 'fa-angle-double-left'} [!collapseMenu]" data-icon1="fa-angle-double-left" data-icon2="fa-angle-double-right"></i>
+      </div>
+    </div> -->
+    <div class="main-content">
+      <div class="main-content-inner" >
+        <div ncy-breadcrumb></div>
+        <div ui-view="content" id="content"></div>
+      </div>
+    </div>
+    <a class="btn-scroll-up btn btn-sm btn-inverse" sticky-nav id="btn-scroll-up" href="" du-smooth-scroll="navbar">
+        <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+      </a>
+  </div>

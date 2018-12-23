@@ -1,0 +1,110 @@
+<style>
+    .mgleft{
+        margin-left: 15px !important;
+    }
+    .mgrigth{
+        margin-right: 15px !important;
+    }
+    .mgtop15px{
+        margin-top: 15px !important;
+    }
+    .width100{
+        width: 100% !important;
+    }
+    .width80{
+        width: 80% !important;
+    }
+    .table-frecuencias>thead>tr>th{
+        border-bottom-width: 0px !important;
+    }
+    .table-frecuencias>tbody>tr>td{
+        border-right: 1px solid #ddd !important;
+    }
+</style>
+
+<div class="modal-header" style="background-color: #438eb9; color: white;">
+    <h3 class="modal-title"
+    ng-if="vmServer.languageManager.ModalStrings.TitleNewServer">
+        {{vmServer.languageManager.ModalStrings.TitleNewServer}}
+    </h3>
+    <h3 class="modal-title"
+    ng-if="!vmServer.languageManager.ModalStrings.TitleNewServer">
+        New Server
+    </h3>
+</div>
+<div class="modal-body">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <label
+            ng-if="vmServer.languageManager.ModalStrings.IpDnsServer">
+                {{vmServer.languageManager.ModalStrings.IpDnsServer}}:
+            </label>
+            <label
+            ng-if="!vmServer.languageManager.ModalStrings.IpDnsServer">
+                Ip Or DNS server:
+            </label>
+            <input type="text"
+                class="form-control"
+                placeholder="www.examplelanplayserver.com"
+                ng-model="vmServer.ipServer"
+            >
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <label
+            ng-if="vmServer.languageManager.ModalStrings.AbreviationLocation">
+                {{vmServer.languageManager.ModalStrings.AbreviationLocation}}:
+            </label>
+            <label
+            ng-if="!vmServer.languageManager.ModalStrings.AbreviationLocation">
+                Location abbreviation:
+            </label>
+            <input type="text"
+                maxlength="2"
+                class="form-control"
+                placeholder="MX"
+                ng-model="vmServer.abbreviationServer"
+            >
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <label
+            ng-if="vmServer.languageManager.ModalStrings.LocationName">
+                {{vmServer.languageManager.ModalStrings.LocationName}}:
+            </label>
+            <label
+            ng-if="!vmServer.languageManager.ModalStrings.LocationName">
+                Location Name:
+            </label>
+            <input type="text"
+                class="form-control"
+                placeholder="example: México"
+                ng-model="vmServer.locationName"
+            >
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-link" type="button"
+    ng-click="vmServer.cancel()"
+    ng-if="!vmServer.languageManager.ModalStrings.ButtonCancel">
+        Cancel
+    </button>
+
+    <button class="btn btn-link" type="button"
+    ng-click="vmServer.cancel()"
+    ng-if="vmServer.languageManager.ModalStrings.ButtonCancel">
+        {{vmServer.languageManager.ModalStrings.ButtonCancel}}
+    </button>
+    
+    <button class="btn btn-success" type="button"
+    ng-click="vmServer.ok()"
+    ng-if="!vmServer.languageManager.ModalStrings.ButtonOk">
+        <i class="fa fa-floppy-o" aria-hidden="true"></i>
+        Ok
+    </button>
+    <button class="btn btn-success" type="button"
+    ng-click="vmServer.ok()"
+    ng-if="vmServer.languageManager.ModalStrings.ButtonOk">
+        <i class="fa fa-floppy-o" aria-hidden="true"></i>
+        {{vmServer.languageManager.ModalStrings.ButtonOk}}
+    </button>
+</div>

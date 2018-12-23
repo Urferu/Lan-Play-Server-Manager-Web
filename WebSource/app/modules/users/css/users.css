@@ -1,0 +1,64 @@
+@media (min-width: 992px) {
+	.nav-users {
+		position: fixed;
+	}
+}
+
+.remove-account-container {
+	display: inline-block;
+	position: relative;
+}
+
+.btn-remove-account {
+	top: 10px;
+	right: 10px;
+	position: absolute;
+}
+
+/* ======= */
+.login-layout {
+	background: white;
+
+}
+
+.login-layout .widget-box {
+    background-color: #fff;
+    padding: 0px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 19px rgba(255, 255, 255, 0.3);
+}
+.login-layout .widget-box .widget-main {
+
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+.form-horizontal .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.form-group {
+    margin-bottom: 5px;
+}
+
+#login-box
+{
+
+    border-radius: 10px;
+}
+
+.vertical-height
+{
+     height: 100vh;
+     /*border:1px solid red;*/
+}
+.vertical-center
+{
+    position: relative;
+    top:25%;
+}
+.center-text
+{
+    text-align: center;
+    font-size: 2em !important;
+}

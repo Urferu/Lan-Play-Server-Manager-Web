@@ -1,0 +1,412 @@
+<style type="text/css">
+    .fa-check.second-check {
+        margin-left: -8px !important;
+    }
+
+    .badge {
+        margin-left: -6%;
+        padding: 1px 3px;
+        opacity: 0.95 !important;
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 600;
+        color: #ffffff;
+        line-height: 1;
+        vertical-align: baseline;
+        white-space: nowrap;
+        text-align: center;
+        background-color: #0080FF;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .fa-envelope{
+        color: #00BFFF !important;
+        cursor: pointer;
+        
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+    }
+
+    .fa-envelope:hover{ 
+        color: #00BFFF !important;
+        /*text-shadow: 0px 1px 0px #000;*/
+        
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+
+    .itemdiv.dialogdiv:before {
+        position: fixed !important;
+    }
+    .itemdiv.dialogdiv > .bodyrespuesta {
+        border: 1px solid #DDE4ED;
+        padding: 5px 8px 8px;
+        border-left-width: 2px;
+    }
+
+    .itemdiv > .bodyrespuesta {
+        width: auto;
+        margin-right: 12px;
+        position: relative;
+    }
+
+    .itemdiv.dialogdiv > .bodyrespuesta:before {
+        content: "";
+        display: block;
+        position: absolute;
+        right: -7px;
+        top: 11px;
+        width: 8px;
+        height: 8px;
+        border: 2px solid #DDE4ED;
+        border-width: 0 2px 2px 0 !important;
+        background-color: #FFF;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .itemdiv.dialogdiv > .bodyrespuesta > .time {
+        position: static;
+        float: right;
+    }
+    .itemdiv > .bodyrespuesta > .time {
+        display: block;
+        font-size: 11px;
+        font-weight: bold;
+        color: #666;
+        position: absolute;
+        right: 9px;
+        top: 0;
+    }
+    .mgleft{
+        margin-left: 15px !important;
+    }
+    .mgrigth{
+        margin-right: 15px !important;
+    }
+    .bg_offline{
+        background-color: #D15B47 !important;
+    }
+</style>
+
+<section class="col-md-12">
+    <dv-page-header></dv-page-header>
+
+        <div class="row">
+            <div class="page-body">
+                <div class="row mgleft mgrigth">
+                    <div class="col-md-12">
+                        <div class="tabbable">
+                            <ul class="nav nav-tabs padding-12 tab-color-blue background-blue" id="myServer">
+                                <li class="active">
+                                    <a data-toggle="tab" href="#servers" aria-expanded="true">{{vmManager.languageManager.StringsPrincipalLenguages.Servers}}</a>
+                                </li>
+
+                                <li class="">
+                                    <a data-toggle="tab" href="#settings" aria-expanded="false">
+                                        <span ng-if="vmManager.languageManager.StringsPrincipalLenguages.ButtonSettings">
+                                            {{vmManager.languageManager.StringsPrincipalLenguages.ButtonSettings}}
+                                        </span>
+                                        <span ng-if="!vmManager.languageManager.StringsPrincipalLenguages.ButtonSettings">
+                                            Settings
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="">
+                                    <a data-toggle="tab" href="#credits" aria-expanded="false"
+                                    title="{{vmManager.languageManager.StringsPrincipalLenguages.Credits}}">
+                                        {{vmManager.languageManager.StringsPrincipalLenguages.ButtonCredits}}
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="servers" class="tab-pane active">
+                                    <div class="row mgleft mgrigth">
+                                        <div class="col-md-12">
+                                            <div class="widget-box transparent">
+                                                <div class="widget-header widget-header-flat">
+                                                    <h4 class="widget-title lighter">
+                                                        <i class="ace-icon fa fa-list blue"></i>
+                                                        {{vmManager.languageManager.StringsPrincipalLenguages.Servers}}
+                                                    </h4>
+                                                    <button type="button" class="btn btn-info btn-xs pull-right mgrigth" style="margin-top: 4px;"
+                                                    title="{{vmManager.languageManager.StringsPrincipalLenguages.ToolTipReload}}"
+                                                    ng-click="vmManager.cargarServidores()">
+                                                        <i class="ace-icon fa fa-refresh bigger-130"></i>
+                                                        {{vmManager.languageManager.StringsPrincipalLenguages.ButtonReload}}
+                                                    </button>
+                                                    <button type="button" class="btn btn-info btn-xs pull-right mgrigth" style="margin-top: 4px;"
+                                                    title="Agrega un nuevo servidor a la lista local"
+                                                    ng-click="vmManager.agregarServidor()">
+                                                        <i class="ace-icon fa fa-plus bigger-130"></i>
+                                                        <span
+                                                        ng-if="!vmManager.languageManager.StringsPrincipalLenguages.ButtonAddServer">
+                                                            Add Server
+                                                        </span>
+                                                        <span
+                                                        ng-if="vmManager.languageManager.StringsPrincipalLenguages.ButtonAddServer">
+                                                            {{vmManager.languageManager.StringsPrincipalLenguages.ButtonAddServer}}
+                                                        </span>
+                                                    </button>
+                                                </div>
+
+                                                <div class="widget-body">
+                                                    <div class="widget-main no-padding">
+                                                        <table class="table table-bordered table-striped">
+                                                            <thead class="thin-border-bottom">
+                                                                <tr>
+                                                                    <th><i class="ace-icon fa fa-caret-right blue"></i>No.</th>
+                                                                    <th>
+                                                                        <i class="ace-icon fa fa-caret-right blue">
+                                                                        </i>
+                                                                        {{vmManager.languageManager.StringsPrincipalLenguages.HeaderServer}}
+                                                                    </th>
+                                                                    <th>
+                                                                        <i class="ace-icon fa fa-caret-right blue">
+                                                                        </i>
+                                                                        {{vmManager.languageManager.StringsPrincipalLenguages.HeaderLocation}}
+                                                                    </th>
+                                                                    <th>
+                                                                        <i class="ace-icon fa fa-caret-right blue">
+                                                                        </i>
+                                                                        {{vmManager.languageManager.StringsPrincipalLenguages.HeaderStatus}}
+                                                                    </th>
+                                                                    <th>
+                                                                        <i class="ace-icon fa fa-caret-right blue">
+                                                                        </i>
+                                                                        {{vmManager.languageManager.StringsPrincipalLenguages.HeaderUsers}}
+                                                                    </th>
+                                                                    <th>
+                                                                        <i class="ace-icon fa fa-caret-right blue">
+                                                                        </i>
+                                                                        {{vmManager.languageManager.StringsPrincipalLenguages.HeaderPing}}
+                                                                    </th>
+                                                                    <th>
+                                                                        <div class="align center">
+                                                                            <i class="ace-icon fa fa-caret-right blue"></i>
+                                                                            {{vmManager.languageManager.StringsPrincipalLenguages.ButtonConnect}}/{{vmManager.languageManager.StringsPrincipalLenguages.ButtonDisconnect}}
+                                                                        </div>
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+
+                                                            <tbody>
+                                                                <tr ng-show="vmManager.servers.length == 0">
+                                                                    <td colspan="7" style="text-align: center;"
+                                                                    ng-if="!vmManager.languageManager.StringsPrincipalLenguages.NoFound">
+                                                                        <i><strong>No servers found.</strong></i>
+                                                                    </td>
+                                                                    <td colspan="7" style="text-align: center;"
+                                                                    ng-if="vmManager.languageManager.StringsPrincipalLenguages.NoFound">
+                                                                        <i><strong>{{vmManager.languageManager.StringsPrincipalLenguages.NoFound}}</strong></i>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr ng-repeat="server in vmManager.servers" ng-class="vmManager.claseRenglon(server)">
+                                                                    <td title="{{server.num}}">
+                                                                        {{server.num}}</span>
+                                                                    </td>
+                                                                    <td title="{{caja.ipDns}}">
+                                                                        {{server.ipDns}}
+                                                                    </td>
+                                                                    <td title="{{server.ubicacion}}">
+                                                                        <span ng-class="vmManager.getFlag(server)"></span>
+                                                                        {{server.ubicacion}}
+                                                                    </td>
+                                                                    <td title="{{server.estatus}}">
+                                                                        {{server.estatus}}
+                                                                    </td>
+                                                                    <td title="{{server.conectados}}">
+                                                                        {{server.conectados}}
+                                                                        <a class="blue" style="cursor:pointer"
+                                                                            ng-click="vmManager.actualizarDatosServer(server)"
+                                                                        >
+                                                                            <i class="ace-icon fa fa-refresh bigger-130"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                    <td title="{{server.ping}}">
+                                                                        {{server.ping}} ms
+                                                                        <a class="blue" style="cursor:pointer"
+                                                                            ng-click="vmManager.actualizarDatosServer(server)"
+                                                                        >
+                                                                            <i class="ace-icon fa fa-refresh bigger-130"></i>
+                                                                        </a>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div class="align center action-buttons">
+                                                                            <button type="button" class="btn btn-success btn-xs" style="margin-top: 4px;"
+                                                                            title="{{vmManager.languageManager.StringsPrincipalLenguages.ToolTipConnect}}"
+                                                                            ng-show="server.estatus != '...' && server.estatus.includes('Online')"
+                                                                            ng-if="vmManager.paramsLanPlay.numServer != server.num"
+                                                                            ng-click="vmManager.conectarDesconectarServer(server, 'connect')">
+                                                                                <i class="ace-icon fa fa-plug bigger-130"></i>
+                                                                                {{vmManager.languageManager.StringsPrincipalLenguages.ButtonConnect}}
+                                                                            </button>
+                                                                            <button type="button" class="btn btn-danger btn-xs" style="margin-top: 4px;"
+                                                                            title="{{vmManager.languageManager.StringsPrincipalLenguages.ToolTipConnect}}"
+                                                                            ng-show="server.estatus != '...' && server.estatus.includes('Online')"
+                                                                            ng-if="vmManager.paramsLanPlay.numServer == server.num"
+                                                                            ng-click="vmManager.conectarDesconectarServer(server, 'disconnect')">
+                                                                                <i class="ace-icon fa fa-plug bigger-130"></i>
+                                                                                {{vmManager.languageManager.StringsPrincipalLenguages.ButtonDisconnect}}
+                                                                            </button>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="settings" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12 col-sm-12">
+                                            <div class="row">
+                                                <div class="gg-filter-group">
+                                                    <label ng-if="vmManager.languageManager.StringsPrincipalLenguages.LanPlayVersionLabel">
+                                                        {{vmManager.languageManager.StringsPrincipalLenguages.LanPlayVersionLabel}}:
+                                                    </label>
+                                                    <label ng-if="!vmManager.languageManager.StringsPrincipalLenguages.LanPlayVersionLabel">
+                                                        Lan-Play Version:
+                                                    </label>
+                                                    <input type="text"
+                                                        maxlength="4"
+                                                        class="form-control"
+                                                        ng-model="vmManager.paramsLanPlay.lanPlayVersion"
+                                                    >
+                                                    <button type="button" class="btn btn-info btn-xs" style="margin-top: 4px; width: 100%;"
+                                                    title="{{vmManager.languageManager.StringsPrincipalLenguages.ToolTipReload}}"
+                                                    ng-click="vmManager.getLastVersionLanPlay()">
+                                                        <i class="ace-icon fa fa-cloud-download bigger-130"></i>
+                                                        <span
+                                                        ng-if="vmManager.languageManager.StringsPrincipalLenguages.ButtonLastVersionLP"
+                                                        title="{{vmManager.languageManager.StringsPrincipalLenguages.ToolTipLastVersionLP}}">
+                                                            {{vmManager.languageManager.StringsPrincipalLenguages.ButtonLastVersionLP}}
+                                                        </span>
+                                                        <span
+                                                        ng-if="!vmManager.languageManager.StringsPrincipalLenguages.ButtonLastVersionLP"
+                                                        title="Get the latest version of Lan-Play">
+                                                            Last Version
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                                <div class="gg-filter-group">
+                                                    <label
+                                                    title="{{vmManager.languageManager.StringsPrincipalLenguages.ToolTipMTU}}">
+                                                        <a href="http://www.letmecheck.it/mtu-test.php">
+                                                            MTU:
+                                                        </a>
+                                                    </label>
+                                                    <input type="text"
+                                                        solo-numeros
+                                                        maxlength="4"
+                                                        class="form-control"
+                                                        ng-model="vmManager.paramsLanPlay.pmtu"
+                                                        title="{{vmManager.languageManager.StringsPrincipalLenguages.ToolTipMTUValue}}"
+                                                    >
+                                                </div>
+                                                <div class="gg-filter-group">
+                                                    <div class="checkbox">
+                                                        <label class="block">
+                                                            <input name="form-field-checkbox" type="checkbox"
+                                                            ng-model="vmManager.paramsLanPlay.selectedInterfaz"
+                                                            ng-change="vmManager.changeAutoSelectedInterfaz()"
+                                                            class="ace input-lg">
+                                                            <span class="lbl bigger-120"
+                                                            ng-if="vmManager.languageManager.StringsPrincipalLenguages.checkAutoInterfaz"
+                                                            title="{{vmManager.languageManager.StringsPrincipalLenguages.checkAutoInterfazToolTip}}">
+                                                                {{vmManager.languageManager.StringsPrincipalLenguages.checkAutoInterfaz}}
+                                                            </span>
+                                                            <span class="lbl bigger-120"
+                                                            ng-if="!vmManager.languageManager.StringsPrincipalLenguages.checkAutoInterfaz"
+                                                            title="Allows the application to select the network interface automatically.">
+                                                                Select interfaz
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="block">
+                                                            <input name="form-field-checkbox" type="checkbox"
+                                                            ng-model="vmManager.paramsLanPlay.fakeInternet"
+                                                            class="ace input-lg">
+                                                            <span class="lbl bigger-120">
+                                                                Fake-Internet
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label class="block">
+                                                            <input name="form-field-checkbox" type="checkbox"
+                                                            ng-model="vmManager.paramsLanPlay.showConsole"
+                                                            ng-change="vmManager.changeShowConsole()"
+                                                            class="ace input-lg">
+                                                            <span class="lbl bigger-120"
+                                                            ng-if="vmManager.languageManager.StringsPrincipalLenguages.ShowConsole"
+                                                            title="{{vmManager.languageManager.StringsPrincipalLenguages.ShowConsoleToolTip}}">
+                                                                {{vmManager.languageManager.StringsPrincipalLenguages.ShowConsole}}
+                                                            </span>
+                                                            <span class="lbl bigger-120"
+                                                            ng-if="!vmManager.languageManager.StringsPrincipalLenguages.ShowConsole"
+                                                            title="Show the information of the lan-play console.">
+                                                                Show Console
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="gg-filter-group">
+                                                    <label
+                                                    ng-if="!vmManager.languageManager.StringsPrincipalLenguages.LanguageSelected">
+                                                        Language:
+                                                    </label>
+                                                    <label
+                                                    ng-if="vmManager.languageManager.StringsPrincipalLenguages.LanguageSelected">
+                                                        {{vmManager.languageManager.StringsPrincipalLenguages.LanguageSelected}}
+                                                    </label>
+                                                    <select class="requiered col-md-12"
+                                                        chosen
+                                                        placeholder-text-single= "'Select language...'"
+                                                        ng-change="vmManager.changeLanguage()"
+                                                        no-results-text="'No records'"
+                                                        ng-model="vmManager.actualLanguage"
+                                                        ng-options="language.language_name for language in
+                                                            vmManager.languages track by language.abbreviation"
+                                                        width="'100%'">
+                                                    </select>
+                                                </div>
+                                            </div>                
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="credits" class="tab-pane">
+                                    <p>{{vmManager.languageManager.StringsCreditsLenguages.DesignedBy}}</p>
+                                    <p>{{vmManager.languageManager.StringsCreditsLenguages.DevelopedBy}}</p>
+                                    <p>{{vmManager.languageManager.StringsCreditsLenguages.ListServers}}</p>
+                                    <p>{{vmManager.languageManager.StringsCreditsLenguages.SupportedBy}}</p>
+                                    <p><a href="https://discord.gg/q6hdKc8">ModGames Discord</a></p>
+                                    <p>{{vmManager.languageManager.StringsCreditsLenguages.FollowOn}}</p>
+                                    <p><a href="http://www.radikal-gamez.net/forums/juegos-switch.196/">ReadikalGamez Discord</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

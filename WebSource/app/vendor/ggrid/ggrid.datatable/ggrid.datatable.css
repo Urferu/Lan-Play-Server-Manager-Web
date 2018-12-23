@@ -1,0 +1,33 @@
+.dataTable tr.group td{
+	font-weight: bold;
+}
+
+.dataTables_wrapper .row:first-child, .dataTables_wrapper .row:last-child{
+	padding: 0px !important;
+	background-color: #fff !important;
+}
+
+.dt-actions{
+	margin: 0px;
+}
+
+.dt-actions i{
+	margin-right: 8px; 
+}
+
+.dt-actions .dt-add{
+}
+
+.dt-actions .dt-edit{
+}
+
+.dt-actions .dt-delete{
+}
+
+.gg-filters-title h4{
+	margin: 0px !important;
+}
+
+.gg-filters{
+	padding: 2px;
+}
