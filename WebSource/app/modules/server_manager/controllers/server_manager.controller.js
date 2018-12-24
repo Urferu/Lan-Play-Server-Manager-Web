@@ -134,7 +134,7 @@
                 server.estatus = respuesta.estatus;
                 server.conectados = respuesta.conectados;
                 server.ping = respuesta.ping;
-                if(nextIndex && nextIndex < vmManager.servers,length){
+                if(nextIndex && nextIndex < vmManager.servers.length){
                     vmManager.actualizarDatosServer(vmManager.servers[nextIndex], nextIndex + 1);
                 }
             });
