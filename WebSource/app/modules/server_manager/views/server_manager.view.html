@@ -142,7 +142,7 @@
                                                     </h4>
                                                     <button type="button" class="btn btn-info btn-xs pull-right mgrigth" style="margin-top: 4px;"
                                                     title="{{vmManager.languageManager.StringsPrincipalLenguages.ToolTipReload}}"
-                                                    ng-click="vmManager.cargarServidores()">
+                                                    ng-click="vmManager.cargarServidores(true)">
                                                         <i class="ace-icon fa fa-refresh bigger-130"></i>
                                                         {{vmManager.languageManager.StringsPrincipalLenguages.ButtonReload}}
                                                     </button>
@@ -228,19 +228,9 @@
                                                                     </td>
                                                                     <td title="{{server.conectados}}">
                                                                         {{server.conectados}}
-                                                                        <a class="blue" style="cursor:pointer"
-                                                                            ng-click="vmManager.actualizarDatosServer(server)"
-                                                                        >
-                                                                            <i class="ace-icon fa fa-refresh bigger-130"></i>
-                                                                        </a>
                                                                     </td>
                                                                     <td title="{{server.ping}}">
                                                                         {{server.ping}} ms
-                                                                        <a class="blue" style="cursor:pointer"
-                                                                            ng-click="vmManager.actualizarDatosServer(server)"
-                                                                        >
-                                                                            <i class="ace-icon fa fa-refresh bigger-130"></i>
-                                                                        </a>
                                                                     </td>
                                                                     <td>
                                                                         <div class="align center action-buttons">

@@ -102,7 +102,7 @@
             });
         };
 
-        vmManager.cargarServidores = function(){
+        vmManager.cargarServidores = function(refrescar){
             if(vmManager.languageManager.StringsMessage && vmManager.languageManager.StringsMessage.PleaseWait){
                 blockUI.start(vmManager.languageManager.StringsMessage.PleaseWait + '...');
             }
@@ -111,20 +111,32 @@
             }
             svManager.cargarServidoresOficiales(function(respuesta){
                 svManager.cargarServidoresLocales(function(respuesta2){
-                    vmManager.servers = respuesta.concat(respuesta2).uniqueServers();
-                    for(var i = 0; i < vmManager.servers.length; i++)
-                    {
-                        vmManager.actualizarDatosServer(vmManager.servers[i]);
+                    var serversTemp = respuesta.concat(respuesta2).uniqueServers();
+                    if(vmManager.servers.length == 0)
+                        vmManager.servers = serversTemp;
+                    else if(serversTemp.length > vmManager.servers.length)
+                        vmManager.servers = vmManager.servers.concat(serversTemp).uniqueServers();
+
+                    if(!refrescar){
+                        for(var i = 0; i < vmManager.servers.length; i++)
+                        {
+                            vmManager.actualizarDatosServer(vmManager.servers[i]);
+                        }
+                    }else{
+                        vmManager.actualizarDatosServer(vmManager.servers[0], 1);
                     }
                 });
             });
         };
 
-        vmManager.actualizarDatosServer = function(server) {
+        vmManager.actualizarDatosServer = function(server, nextIndex) {
             svManager.cargarDatosServidor(server, function(respuesta){
                 server.estatus = respuesta.estatus;
                 server.conectados = respuesta.conectados;
                 server.ping = respuesta.ping;
+                if(nextIndex){
+                    vmManager.actualizarDatosServer(vmManager.servers[nextIndex], nextIndex + 1);
+                }
             });
         };
 
@@ -240,7 +252,7 @@
 
         vmManager.agregarServidor = function(){
             svManager.openNewServer(vmManager.servers, vmManager.languageManager, function(){
-                vmManager.cargarServidores();
+                vmManager.cargarServidores(true);
             });
         };
 
