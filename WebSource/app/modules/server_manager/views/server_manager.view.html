@@ -236,7 +236,7 @@
                                                                         <div class="align center action-buttons">
                                                                             <button type="button" class="btn btn-success btn-xs" style="margin-top: 4px;"
                                                                             title="{{vmManager.languageManager.StringsPrincipalLenguages.ToolTipConnect}}"
-                                                                            ng-show="server.estatus != '...' && server.estatus.includes('Online')"
+                                                                            ng-show="server.estatus != '...'"
                                                                             ng-if="vmManager.paramsLanPlay.numServer != server.num"
                                                                             ng-click="vmManager.conectarDesconectarServer(server, 'connect')">
                                                                                 <i class="ace-icon fa fa-plug bigger-130"></i>
@@ -244,7 +244,7 @@
                                                                             </button>
                                                                             <button type="button" class="btn btn-danger btn-xs" style="margin-top: 4px;"
                                                                             title="{{vmManager.languageManager.StringsPrincipalLenguages.ToolTipConnect}}"
-                                                                            ng-show="server.estatus != '...' && server.estatus.includes('Online')"
+                                                                            ng-show="server.estatus != '...'"
                                                                             ng-if="vmManager.paramsLanPlay.numServer == server.num"
                                                                             ng-click="vmManager.conectarDesconectarServer(server, 'disconnect')">
                                                                                 <i class="ace-icon fa fa-plug bigger-130"></i>
