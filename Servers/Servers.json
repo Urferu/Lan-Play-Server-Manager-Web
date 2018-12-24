@@ -22,8 +22,7 @@
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
-    }
-    ,
+    },
     {
         "num": 4,
         "ipDns": "pcoh.ddns.net",
@@ -31,84 +30,131 @@
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
-    }
-    ,
+    },
     {
         "num": 5,
         "ipDns": "fr.fadx.co.uk",
-        "ubicacion": "EU-(France)",
+        "ubicacion": "FR-EU-France",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
-    }
-    ,
+    },
     {
         "num": 6,
-        "ipDns": "switch.glaciergaming.co.uk",
-        "ubicacion": "EU-(UK)",
+        "ipDns": "switch.lan-play.com",
+        "ubicacion": "FR-EU-France",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
-    }
-    ,
+    },
     {
         "num": 7,
-        "ipDns": "switch.homelab.tech",
-        "ubicacion": "EU-(UK)",
+        "ipDns": "switch.glaciergaming.co.uk",
+        "ubicacion": "UK-EU",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
-    }
-    ,
+    },
     {
         "num": 8,
-        "ipDns": "memehouse.de",
-        "ubicacion": "EU-(Germany)",
+        "ipDns": "switch.homelab.tech",
+        "ubicacion": "UK-EU",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
-    }
-    ,
+    },
     {
         "num": 9,
-        "ipDns": "relay.it-cybergate.club",
-        "ubicacion": "EU-(Germany)",
+        "ipDns": "memehouse.de",
+        "ubicacion": "DE-EU-Germany",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
-    }
-    ,
+    },
     {
         "num": 10,
-        "ipDns": "177.54.110.45",
-        "ubicacion": "Brazil",
+        "ipDns": "relay.it-cybergate.club",
+        "ubicacion": "DE-EU-Germany",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
-    }
-    ,
+    },
     {
         "num": 11,
+        "ipDns": "177.54.110.45",
+        "ubicacion": "BR-Brazil",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    },
+    {
+        "num": 12,
         "ipDns": "slp.rush-hour.wo.tc",
         "ubicacion": "KR-Korea",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
-    }
-    ,
+    },
     {
-        "num": 12,
+        "num": 13,
         "ipDns": "lithium2g.ddns.net",
-        "ubicacion": "Australia",
+        "ubicacion": "AU-Australia",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
-    }
-    ,
+    },
     {
-        "num": 13,
+        "num": 14,
         "ipDns": "switch.goffy.tk",
-        "ubicacion": "EU-(Norway)",
+        "ubicacion": "NO-EU-Norway",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    },
+    {
+        "num": 15,
+        "ipDns": "200.120.118.142",
+        "ubicacion": "CL-Chile - Modgames",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    },
+    {
+        "num": 16,
+        "ipDns": "18.191.92.182",
+        "ubicacion": "US - Urferu",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    },
+    {
+        "num": 17,
+        "ipDns": "bandits.duckdns.org",
+        "ubicacion": "ES-EU-España",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    },
+    {
+        "num": 18,
+        "ipDns": "euplay.secretalgorithm.com",
+        "ubicacion": "LT-EU-Lithuania",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    },
+    {
+        "num": 19,
+        "ipDns": "qcswitch.ddns.net",
+        "ubicacion": "CA-Canada",
+        "estatus": "...",
+        "conectados": "...",
+        "ping": "..."
+    },
+    {
+        "num": 20,
+        "ipDns": "185.233.117.26",
+        "ubicacion": "RU-Rusia",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
