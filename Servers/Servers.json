@@ -34,7 +34,7 @@
     {
         "num": 5,
         "ipDns": "fr.fadx.co.uk",
-        "ubicacion": "FR-EU-France",
+        "ubicacion": "FR-France",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
@@ -42,7 +42,7 @@
     {
         "num": 6,
         "ipDns": "switch.lan-play.com",
-        "ubicacion": "FR-EU-France",
+        "ubicacion": "FR-France",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
@@ -50,7 +50,7 @@
     {
         "num": 7,
         "ipDns": "switch.glaciergaming.co.uk",
-        "ubicacion": "UK-EU",
+        "ubicacion": "GB-Great Britain",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
@@ -58,7 +58,7 @@
     {
         "num": 8,
         "ipDns": "switch.homelab.tech",
-        "ubicacion": "UK-EU",
+        "ubicacion": "GB-Great Britain",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
@@ -66,7 +66,7 @@
     {
         "num": 9,
         "ipDns": "memehouse.de",
-        "ubicacion": "DE-EU-Germany",
+        "ubicacion": "DE-Germany",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
@@ -74,7 +74,7 @@
     {
         "num": 10,
         "ipDns": "relay.it-cybergate.club",
-        "ubicacion": "DE-EU-Germany",
+        "ubicacion": "DE-Germany",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
@@ -106,7 +106,7 @@
     {
         "num": 14,
         "ipDns": "switch.goffy.tk",
-        "ubicacion": "NO-EU-Norway",
+        "ubicacion": "NO-Norway",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
@@ -130,7 +130,7 @@
     {
         "num": 17,
         "ipDns": "bandits.duckdns.org",
-        "ubicacion": "ES-EU-España",
+        "ubicacion": "ES-España",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
@@ -138,7 +138,7 @@
     {
         "num": 18,
         "ipDns": "euplay.secretalgorithm.com",
-        "ubicacion": "LT-EU-Lithuania",
+        "ubicacion": "LT-Lithuania",
         "estatus": "...",
         "conectados": "...",
         "ping": "..."
